@@ -1,0 +1,12 @@
+//
+//  Release.xcconfig
+//  Environments
+//
+//  Created by Pablo on 05/01/2019.
+//  Copyright © 2019 Pablo Sanchez Egido. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+CONFIGURATION = "Release"

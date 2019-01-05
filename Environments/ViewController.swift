@@ -14,6 +14,8 @@ class ViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let config = Bundle.main.infoDictionary?["Configuration"] as? String
+        currentConfigLabel.text = config
     }
 }

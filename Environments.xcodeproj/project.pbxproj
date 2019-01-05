@@ -15,13 +15,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6EB1BE1721E0D5AD00646A1A /* Environments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Environments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB1BE1721E0D5AD00646A1A /* Environments-Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Environments-Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB1BE1A21E0D5AD00646A1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EB1BE1C21E0D5AD00646A1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6EB1BE1F21E0D5AD00646A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EB1BE2121E0D5AE00646A1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EB1BE2421E0D5AE00646A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EB1BE2621E0D5AE00646A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB1BE2E21E0DA3500646A1A /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		6EB1BE2F21E0DA4100646A1A /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
+		6EB1BE3021E0DA4700646A1A /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +49,7 @@
 		6EB1BE1821E0D5AD00646A1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6EB1BE1721E0D5AD00646A1A /* Environments.app */,
+				6EB1BE1721E0D5AD00646A1A /* Environments-Debug.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +60,9 @@
 				6EB1BE1A21E0D5AD00646A1A /* AppDelegate.swift */,
 				6EB1BE1C21E0D5AD00646A1A /* ViewController.swift */,
 				6EB1BE1E21E0D5AD00646A1A /* Main.storyboard */,
+				6EB1BE2E21E0DA3500646A1A /* Debug.xcconfig */,
+				6EB1BE2F21E0DA4100646A1A /* QA.xcconfig */,
+				6EB1BE3021E0DA4700646A1A /* Release.xcconfig */,
 				6EB1BE2121E0D5AE00646A1A /* Assets.xcassets */,
 				6EB1BE2321E0D5AE00646A1A /* LaunchScreen.storyboard */,
 				6EB1BE2621E0D5AE00646A1A /* Info.plist */,
@@ -81,7 +87,7 @@
 			);
 			name = Environments;
 			productName = Environments;
-			productReference = 6EB1BE1721E0D5AD00646A1A /* Environments.app */;
+			productReference = 6EB1BE1721E0D5AD00646A1A /* Environments-Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -282,15 +288,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DNU96T24MS;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Environments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanchezegido.environments;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanchezegido.environments.debug;
+				PRODUCT_NAME = "$(TARGET_NAME)-Debug";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +307,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DNU96T24MS;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Environments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanchezegido.environments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,15 +387,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DNU96T24MS;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Environments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanchezegido.environments;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanchezegido.environments.qa;
+				PRODUCT_NAME = "$(TARGET_NAME)-QA";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
